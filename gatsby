@@ -1,0 +1,53 @@
+// install gatsby globally
+npm i -g gatsby-cli
+
+// adding new gatsby file
+gatsby new gatsby_main
+
+// to run the server // included in the package.json
+gatsby develop
+
+// run the server at
+localhost:8000
+
+// installing vscode snippets
+ES7 React/Redux/GraphQL/React-Native snippets
+// to use this just type:
+"rfc + tab". to build automatic react functional component
+"rcc + tab". to build automatic react class-based component
+
+// for MD files: blogpost for file system and markdown md files using transformer remark on the local disk into HTML, and links for markdown and other non react pages
+npm i gatsby-source-filesystem gatsby-transformer-remark gatsby-plugin-catch-links
+
+// to execute just run: 
+http://localhost:8000/___graphql
+// then write the code
+{
+    allFile {
+        edges {
+            node{
+                id
+            }
+        }
+    }
+}
+// this is the default syntax
+
+
+
+{
+    allMarkdownRemark {
+        edges {
+            node {
+                frontmatter {
+                    path
+                    title
+                    date
+                    author
+                }
+                excerpt
+            }
+        }
+    }
+}
+// to view the MD file in the pages folder

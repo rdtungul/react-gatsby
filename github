@@ -1,0 +1,17 @@
+// to initialize github repository
+git init
+
+// for git ignore file
+git add .
+
+// for the initial version and name of the repository
+git init -am 'initial commit react x gatsby v1'
+
+// for the remote file on github page
+git remote add origin https://github.com/rdtungul/react-gatsby.git
+
+// to push the local file to the github page
+git push -u origin master
+
+// login to github
+username and password
